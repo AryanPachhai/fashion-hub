@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .user-options a {
+            color: white;
+            margin: 0 1rem;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('images/hero.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        /* Filters */
+        #filters {
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+        .filters-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .filters-container div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Products */
+        #products {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Login Section */
+        #login {
+            padding: 2rem;
+            text-align: center;
+        }
+        #login form {
+            display: inline-block;
+            max-width: 300px;
+            width: 100%;
+        }
+        #login form div {
+            margin-bottom: 1rem;
+        }
+
+        /* About and Contact Sections */
+        #about, #contact {
+            padding: 2rem;
+        }
+        #contact form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        #contact form div {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Fashion Hub</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-options">
+            <a href="#login" id="login-btn">Login</a>
+            <a href="#cart" id="cart-btn">Cart (0)</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h1>Welcome to Fashion Hub</h1>
+                <p>Your one-stop shop for trendy fashion!</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="filters">
+            <div class="filters-container">
+                <h2>Filters</h2>
+                <form id="
